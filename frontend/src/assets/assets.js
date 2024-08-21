@@ -11,7 +11,7 @@ export const products = [
     description: "Grade 9",
     price: 1,
     image: [],
-    category: "GCSE",
+    category: "gcse",
     date: 2023,
     bestseller: true,
   },
