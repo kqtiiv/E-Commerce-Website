@@ -10,23 +10,27 @@ import Orders from "./pages/Orders";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Searchbar from "./components/Searchbar";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
-    <div className="px-7 lg:px-40">
+    <div>
+      <ToastContainer />
       <Navbar />
-      <Searchbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/product/:productId" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/place-order" element={<PlaceOrder />} />
-        <Route path="/prders" element={<Orders />} />
-      </Routes>
-      <Footer />
+      <div className="pt-[4rem] px-7 lg:px-40">
+        <Searchbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product/:productId" element={<Product />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/place-order" element={<PlaceOrder />} />
+          <Route path="/prders" element={<Orders />} />
+        </Routes>
+        <Footer />
+      </div>
     </div>
   );
 };
