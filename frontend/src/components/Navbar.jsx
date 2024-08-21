@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
-      <h1 className="pointer-events-none">study café</h1>
+      <NavLink to="/">study café</NavLink>
       <ul className="hidden sm:flex gap-5 text-sm">
         <NavLink
           to="/"
