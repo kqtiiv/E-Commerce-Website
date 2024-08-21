@@ -1,4 +1,3 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Collection from "./pages/Collection";
@@ -8,10 +7,12 @@ import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="px-4">
+    <div className="px-7 lg:px-40">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
