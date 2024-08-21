@@ -7,6 +7,7 @@ export default {
       black: "#4c4848",
       brown: "#cdb79d",
       beige: "#f8e4c0",
+      green: "#C1D8C3",
     },
     extend: {},
   },
