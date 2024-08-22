@@ -14,7 +14,7 @@ const StudyServices = () => {
           <p className="font-semibold">classic room</p>
           <p className="text-black">music, pomodoro, ambiance</p>
           <button
-            onClick={() => navigate("/study-room")}
+            onClick={() => navigate("/study-room-classic")}
             className="mt-5 bg-green py-1 justify-center text-black active:bg-beige rounded-sm flex px-3"
           >
             take me there
@@ -24,7 +24,7 @@ const StudyServices = () => {
           <p className="font-semibold">silent room</p>
           <p className="text-black">pomodoro, no music, blank</p>
           <button
-            onClick={() => navigate("/study-room")}
+            onClick={() => navigate("/study-room-silent")}
             className="mt-5 bg-green py-1 justify-center text-black active:bg-beige rounded-sm flex px-3"
           >
             take me there
@@ -34,7 +34,7 @@ const StudyServices = () => {
           <p className="font-semibold">offline room</p>
           <p className="text-black">nothingness.</p>
           <button
-            onClick={() => navigate("/study-room")}
+            onClick={() => navigate("/study-room-offline")}
             className="mt-5 bg-green py-1 justify-center text-black active:bg-beige rounded-sm flex px-3"
           >
             take me there
