@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Searchbar from "./components/Searchbar";
 import StudyRoomClassic from "./pages/StudyRoomClassic";
+import StudyRoomOffline from "./pages/StudyRoomOffline";
 import { ToastContainer } from "react-toastify";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/study-room-classic" element={<StudyRoomClassic />} />
+          <Route path="/study-room-offline" element={<StudyRoomOffline />} />
         </Routes>
         <Footer />
       </div>

@@ -6,7 +6,6 @@ const Pomodoro = () => {
   const {
     status,
     setStatus,
-    timeLeft,
     setTimeLeft,
     mode,
     isRunning,
