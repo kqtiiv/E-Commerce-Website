@@ -64,7 +64,42 @@ const Pomodoro = () => {
       <div className="text-center py-10 text-3xl">
         <Title text1={"pomodoro"} text2={"timer"} />
       </div>
-      <div className="flex flex-col justify-center gap-12 text-center pb-20 text-black">
+      <div className="flex gap-2 justify-center">
+        <button
+          onClick={() => {
+            setStatus("pomodoro");
+            setIsRunning(false);
+          }}
+          className={`${
+            status === "pomodoro" ? "text-black " : "text-brown"
+          } p-2 pr-[1rem] pl-[1rem] font-medium duration-100  ease-in`}
+        >
+          work
+        </button>
+        <button
+          onClick={() => {
+            setStatus("short");
+            setIsRunning(false);
+          }}
+          className={` ${
+            status === "short" ? "text-black " : "text-brown"
+          } p-2 pr-[1rem] pl-[1rem] font-medium duration-100  ease-in`}
+        >
+          short break
+        </button>
+        <button
+          onClick={() => {
+            setStatus("long");
+            setIsRunning(false);
+          }}
+          className={` ${
+            status === "long" ? "text-black " : "text-brown"
+          } p-2 pr-[1rem] pl-[1rem] font-medium duration-100  ease-in`}
+        >
+          long break
+        </button>
+      </div>
+      <div className="flex flex-col justify-center gap-12 text-center mt-5 pb-20 text-black">
         <div className="text-9xl font-medium">
           {`${minutes}:${seconds < 10 ? "0" : ""}${seconds}`}
         </div>
