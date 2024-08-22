@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Searchbar from "./components/Searchbar";
 import StudyRoomClassic from "./pages/StudyRoomClassic";
 import StudyRoomOffline from "./pages/StudyRoomOffline";
+import StudyRoomSilent from "./pages/StudyRoomSilent";
 import { ToastContainer } from "react-toastify";
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/orders" element={<Orders />} />
           <Route path="/study-room-classic" element={<StudyRoomClassic />} />
           <Route path="/study-room-offline" element={<StudyRoomOffline />} />
+          <Route path="/study-room-silent" element={<StudyRoomSilent />} />
         </Routes>
         <Footer />
       </div>
