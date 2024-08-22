@@ -22,19 +22,10 @@ const Searchbar = () => {
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="flex-1 outline-none bg-inherit text-sm"
+          className="flex-1 outline-none bg-inherit text-sm py-1 px-3 border border-brown rounded-sm"
           type="text"
           placeholder="search"
         />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          className="cursor-pointer fill-black hover:fill-brown"
-          viewBox="0 0 16 16"
-        >
-          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-        </svg>
       </div>
       <svg
         onClick={() => setShowSearch(false)}
