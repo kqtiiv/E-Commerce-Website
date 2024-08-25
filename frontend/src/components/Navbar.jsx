@@ -58,7 +58,6 @@ const Navbar = () => {
           </svg>
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gep-2 w-36 py-3 px-5 bg-beige text-brown rounded">
-              <p className="cursor-pointer hover:text-black">my profile</p>
               <p className="cursor-pointer hover:text-black">orders</p>
               <p className="cursor-pointer hover:text-black">logout</p>
             </div>

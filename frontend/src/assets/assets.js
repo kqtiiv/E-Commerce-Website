@@ -1,7 +1,13 @@
 import logo from "./logo.jpg";
+import latte from "./making-a-latte.mp3";
+import rain from "./rain.mp3";
+import fire from "./fire.mp3";
 
 export const assets = {
   logo,
+  latte,
+  fire,
+  rain,
 };
 
 export const products = [
